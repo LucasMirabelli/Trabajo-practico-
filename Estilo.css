@@ -1,0 +1,106 @@
+header {
+    background-color:#626970;
+}
+
+.barra {
+    background-color: #bab195;
+}
+
+.formulario {
+    background-color: #626970;
+    margin: 10px;
+    padding: 20px;
+  
+ 
+    width: 50%;
+   
+    border-color: black;
+    border-right: dashed;
+    border-top: solid;
+    
+    border-bottom: solid;
+    border-left: solid;
+    border-radius: 20px;
+    }
+
+.Ofertas {
+    background-color: #bab195;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+footer {
+    background-color: coral;
+}
+
+header>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.Registro {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+
+
+.Registro>div {
+    /*Utilizamos selectores avanzados en lugar de clases */
+    color: white;
+    background-color: #e8d18e;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.barra {
+    display: flex;
+
+}
+
+.barra>div {
+    color: white;
+    background-color: #626970;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.tablaviaje {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: black;
+    border: 2px;
+}
+
+.tablaviaje>div {
+    border: 2px;
+    border-style: solid;
+    border-color: #626970;
+    justify-content: center;
+      margin: 10px;
+      padding: 10px;
+    background-color: #e8d18e;
+    border-radius: 5px;
+
+    
+}
+
+.tablaviaje>div>img {
+
+    height: 140px;
+    width: 100%;
+}
+
+.barrasuperior > h1{
+    height: 60px;
+    background-color: red;
+    
+}
