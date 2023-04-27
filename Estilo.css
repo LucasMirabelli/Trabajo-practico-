@@ -1,7 +1,16 @@
+@font-face {
+    font-family: Solari;
+src: url(Fuentes/Solari.ttf)
+}
+
+
+
+
+
 .conteiner {
     display: grid;
 
-    grid-template: 100px 200px 300px 600px 200px / 10% auto auto auto 10%;
+    grid-template: 200px 200px 300px 600px 200px / 10% auto auto auto 10%;
 
         /* Distribuimos el contenido en cada fila */
         grid-template-areas: "header header header header header"
@@ -11,7 +20,7 @@
         "redes redes redes redes redes";
 
 /* separamos los items con gap */
-gap: 0px;
+gap: 5px;
 }
 
 /*----------------------------------------------------------------*/
@@ -22,7 +31,7 @@ gap: 0px;
     display: flex;
     justify-content: space-between;
       grid-area: header;    
-    background-color: orange;  }
+    background-color: rgb(212, 199, 199);  }
  .navbar   { 
     display: flex;
     justify-content: flex-start;
@@ -32,7 +41,7 @@ gap: 0px;
 .der       { grid-area: der;       background-color: rgb(177, 177, 66);  }
 .contenido { grid-area: contenido; background-color: rgb(196, 210, 255);}
 .ofertas      { grid-area: ofertas;       background-color: rgb(36, 204, 106);  } 
-.redes      { grid-area: redes;       background-color: rgb(0, 255, 106);  } 
+.redes      { grid-area: redes;       background-color: #8e8ca3;  } 
 
 
 .barra {
@@ -57,7 +66,15 @@ gap: 0px;
     }
 
 
+.nombreLogo {
+    font-family: Solari;
+    font-size: 20px;
+}
 
+.navbar>div {
+    font-family: Solari;
+
+}
 
 
 .Registro {
@@ -67,7 +84,7 @@ gap: 0px;
 }
 
 
-.Registro>div {
+.Registro>div,  .navbar>div {
     /*Utilizamos selectores avanzados en lugar de clases */
     color: white;
     background-color: #e8d18e;
@@ -151,5 +168,9 @@ gap: 0px;
             "contenido contenido contenido"
             "ofertas ofertas ofertas"
             "redes redes redes";
+    }
+
+    .navbar {
+        flex-direction: column;
     }
 }
