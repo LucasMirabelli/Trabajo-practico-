@@ -1,110 +1,173 @@
 @font-face {
     font-family: Solari;
-src: url(Fuentes/Solari.ttf)
+    src: url(Fuentes/Solari.ttf)
 }
 
-
-
-
+body {
+    margin: 0px;
+}
 
 .conteiner {
     display: grid;
 
-    grid-template: 200px 200px 300px 600px 200px / 10% auto auto auto 10%;
+    grid-template: 90px 70px 300px auto auto / 10% auto auto auto 10%;
 
-        /* Distribuimos el contenido en cada fila */
-        grid-template-areas: "header header header header header"
+    /* Distribuimos el contenido en cada fila */
+    grid-template-areas: "header header header header header"
         "navbar navbar navbar navbar navbar"
         "izq contenido contenido contenido der"
         "izq ofertas ofertas ofertas der"
         "redes redes redes redes redes";
 
-/* separamos los items con gap */
-gap: 5px;
+    /* separamos los items con gap */
+
 }
 
 /*----------------------------------------------------------------*/
 /* Defino el nombre y color de cada area del grid                 */
 /*----------------------------------------------------------------*/
 
-.header    { 
+.header {
     display: flex;
     justify-content: space-between;
-      grid-area: header;    
-    background-color: rgb(212, 199, 199);  }
- .navbar   { 
+    grid-area: header;
+    background-color: rgb(39, 53, 79);
+}
+
+.navbar {
     display: flex;
-    justify-content: flex-start;
-    grid-area: navbar;    
-    background-color: rgb(0, 174, 255);  }
-.izq       { grid-area: izq;       background-color: coral;  }
-.der       { grid-area: der;       background-color: rgb(177, 177, 66);  }
-.contenido { grid-area: contenido; background-color: rgb(196, 210, 255);}
-.ofertas      { grid-area: ofertas;       background-color: rgb(36, 204, 106);  } 
-.redes      { grid-area: redes;       background-color: #8e8ca3;  } 
+    justify-content: center;
+    grid-area: navbar;
+    background-color: white;
+}
 
+.izq {
+    grid-area: izq;
+    background-color: white
+}
 
-.barra {
-    background-color: #bab195;
+.der {
+    grid-area: der;
+    background-color: white;
+}
+
+.contenido {
+    display: flex;
+    grid-area: contenido;
+    background-color: white;
+}
+
+.ofertas {
+    grid-area: ofertas;
+    background-color: rgb(36, 204, 106);
+}
+
+.redes {
+    grid-area: redes;
+    background-color: #8e8ca3;
+}
+
+.botonav>div {
+    padding: 10px;
+    margin: 5px 5px 10px;
+    background-color: rgb(255, 199, 28);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
 .formulario {
-    background-color: #626970;
-    margin: 10px;
-    padding: 20px;
-  
- 
-    width: 50%;
-   
+    background-color: rgb(242, 242, 242);
+    margin: 10px 0px 10px 10px;
+    width: 65%;
     border-color: black;
     border-right: dashed;
     border-top: solid;
-    
     border-bottom: solid;
     border-left: solid;
-    border-radius: 20px;
-    }
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.formulario2 {
+    background-color: rgb(242, 242, 242);
+    margin: 10px 10px 10px 0px;
+   
+    width: 35%;
+    border-color: black;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-left: dashed;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+}
 
+
+.barrasuperior > h1{
+    background-color: rgb(206, 55, 62);
+    margin-top: 0px;
+    border-radius: 30px 30px 0px 0px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.barrasuperior2 > h1{
+    background-color: rgb(206, 55, 62);
+    margin-top: 0px;
+    border-radius: 30px 30px 0px 0px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.logo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
 
 .nombreLogo {
     font-family: Solari;
-    font-size: 20px;
-}
-
-.navbar>div {
-    font-family: Solari;
+    font-size: 15px;
+    color: rgb(255, 199, 28);
 
 }
+
+
+.contacto,
+.inicio {
+    display: flex;
+    padding: 0 1rem;
+}
+
 
 
 .Registro {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     align-content: flex-end;
-}
-
-
-.Registro>div,  .navbar>div {
-    /*Utilizamos selectores avanzados en lugar de clases */
-    color: white;
-    background-color: #e8d18e;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-}
-
-.barra {
-    display: flex;
 
 }
 
-.barra>div {
-    color: white;
-    background-color: #626970;
-    margin: 10px;
-    padding: 10px;
-    font-size: 30px;
+.contacto>p,
+.inicio>p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    color: rgb(111, 109, 111);
 }
+
+.contacto>img,
+.inicio>img {
+    padding: 0 2px;
+}
+
+
 
 .tablaviaje {
     display: flex;
@@ -119,12 +182,12 @@ gap: 5px;
     border-style: solid;
     border-color: #626970;
     justify-content: center;
-      margin: 10px;
-      padding: 10px;
+    margin: 10px;
+    padding: 10px;
     background-color: #e8d18e;
     border-radius: 5px;
 
-    
+
 }
 
 .tablaviaje>div>img {
@@ -133,11 +196,7 @@ gap: 5px;
     width: 100%;
 }
 
-.barrasuperior > h1{
-    height: 60px;
-    background-color: red;
-    
-}
+
 
 @media only screen and (max-width: 920px) {
     .conteiner {
@@ -145,6 +204,7 @@ gap: 5px;
         grid-template: auto auto auto 1000 auto / 25% 25% 25% 25%;
 
         /* Distribuimos el contenido en cada fila */
+        /* Desaparecen columnas der e izq */
         grid-template-areas:
             "header header header header"
             "navbar navbar navbar navbar"
@@ -159,7 +219,7 @@ gap: 5px;
 @media only screen and (max-width: 600px) {
     .conteiner {
         /* Uso un atajo para definir 3 filas / 2 columna */
-        grid-template: auto auto auto auto  / 25% 25% auto;
+        grid-template: auto auto 600px auto / auto auto auto;
 
         /* Distribuimos el contenido en cada fila */
         grid-template-areas:
@@ -173,4 +233,48 @@ gap: 5px;
     .navbar {
         flex-direction: column;
     }
+
+    /* Desaparece el nombre */
+
+    .nombreLogo {
+        display: none;
+    }
+
+    .contacto>p,
+    .inicio>p {
+        display: none;
+    }
+
+
+    .botonav>div {
+
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        margin: 2px;
+    }
+
+    .formulario {
+       margin: 5px 5px 5px 5px;
+       width: 100%;
+        border-color: black;
+        border-right: solid;
+        border-top: solid;
+        border-bottom: dashed;
+        border-left: solid;
+    }
+
+    .formulario2 {
+        margin: 0px;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+         border-color: black;
+         border-right: solid;
+         border-top: dashed;
+         border-bottom: solid;
+         border-left: solid;
+     }
 }
