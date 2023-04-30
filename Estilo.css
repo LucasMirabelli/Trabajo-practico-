@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+
+/*----------------------------------------------------------------*/
+/* Definir el grid para todo el documento                         */
+
 .conteiner {
     display: grid;
 
@@ -19,7 +23,6 @@ body {
         "izq ofertas ofertas ofertas der"
         "redes redes redes redes redes";
 
-    /* separamos los items con gap */
 
 }
 
@@ -59,67 +62,18 @@ body {
 
 .ofertas {
     grid-area: ofertas;
-    background-color: rgb(36, 204, 106);
+    background-color: white;
+
 }
 
 .redes {
     grid-area: redes;
-    background-color: #8e8ca3;
-}
-
-.botonav>div {
-    padding: 10px;
-    margin: 5px 5px 10px;
-    background-color: rgb(255, 199, 28);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
-}
-
-.formulario {
-    background-color: rgb(242, 242, 242);
-    margin: 10px 0px 10px 10px;
-    width: 65%;
-    border-color: black;
-    border-right: dashed;
-    border-top: solid;
-    border-bottom: solid;
-    border-left: solid;
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
-}
-.formulario2 {
-    background-color: rgb(242, 242, 242);
-    margin: 10px 10px 10px 0px;
-   
-    width: 35%;
-    border-color: black;
-    border-right: solid;
-    border-top: solid;
-    border-bottom: solid;
-    border-left: dashed;
-    border-radius: 30px;
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    background-color: rgb(111, 109, 111);
 }
 
 
-.barrasuperior > h1{
-    background-color: rgb(206, 55, 62);
-    margin-top: 0px;
-    border-radius: 30px 30px 0px 0px;
-    padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
-
-.barrasuperior2 > h1{
-    background-color: rgb(206, 55, 62);
-    margin-top: 0px;
-    border-radius: 30px 30px 0px 0px;
-    padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-}
+/*----------------------------------------------------------------*/
+/* Definicion de los estilos el header                           */
 
 .logo {
     padding: 10px;
@@ -169,6 +123,76 @@ body {
 
 
 
+.botonav div {
+    padding: 10px;
+    margin: 5px 5px 10px;
+    background-color: rgb(255, 199, 28);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.buscaTuVuelo:hover, .promociones:hover, .clubAuri:hover, .actividades:hover{
+    transform:  translate(2px,2px);
+}
+
+/*----------------------------------------------------------------*/
+/* Definicion de los estilos de las cosas que estan el el contenido*/
+
+.formulario {
+    background-color: rgb(242, 242, 242);
+    margin: 10px 0px 10px 10px;
+    width: 65%;
+    border-color: black;
+    border-right: dashed;
+    border-top: solid;
+    border-bottom: solid;
+    border-left: solid;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.formulario2 {
+    background-color: rgb(242, 242, 242);
+    margin: 10px 10px 10px 0px;
+   
+    width: 35%;
+    border-color: black;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-left: dashed;
+    border-radius: 0px 30px 30px 0px;;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.barrasuperior > h1{
+    background-color: rgb(206, 55, 62);
+    margin-top: 0px;
+    border-radius: 30px 0px 0px 0px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.barrasuperior2 > h1{
+    background-color: rgb(206, 55, 62);
+    margin-top: 0px;
+    border-radius: 0px 30px 0px 0px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+/*----------------------------------------------------------------*/
+/* Definicion de los estilos de las cosas que estan en la oferta*/
+
+.ofertas h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
 .tablaviaje {
     display: flex;
     flex-direction: row;
@@ -179,24 +203,38 @@ body {
 
 .tablaviaje>div {
     border: 2px;
-    border-style: solid;
-    border-color: #626970;
+
     justify-content: center;
     margin: 10px;
-    padding: 10px;
-    background-color: #e8d18e;
-    border-radius: 5px;
-
+    padding: 0px;
+    background-color: rgb(255, 199, 28);
+    border-radius: 20px 20px 5px 20px;
+z-index: 10;
+box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
 
 }
 
 .tablaviaje>div>img {
-
+z-index: -10;
     height: 140px;
     width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tablaviaje label, p {
+    padding: 5px;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.tablaviaje>div:hover {
+    transform: scale(1.1);
 }
 
 
+/*----------------------------------------------------------------*/
+/* Definicion de los estilos en los distintos media query          */
 
 @media only screen and (max-width: 920px) {
     .conteiner {
@@ -211,6 +249,13 @@ body {
             "contenido contenido contenido contenido"
             "ofertas ofertas ofertas ofertas"
             "redes redes redes redes";
+    }
+
+    .tablaviaje
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+       
     }
 }
 
@@ -253,28 +298,52 @@ body {
 
     .contenido {
         flex-direction: column;
-        margin: 2px;
+   
     }
 
     .formulario {
-       margin: 5px 5px 5px 5px;
-       width: 100%;
+        margin: 5px 5px 0px 5px;
+             width: auto;
+             
+       border-radius: 30px 30px 0px 0px;
         border-color: black;
         border-right: solid;
         border-top: solid;
         border-bottom: dashed;
         border-left: solid;
     }
-
+.barrasuperior > h1 {
+    border-radius: 30px 30px 0px 0px;
+}
     .formulario2 {
-        margin: 0px;
-        border-radius: 30px;
-        width: 100%;
+       margin: 0px 5px 5px 5px;
+        border-radius: 0px 0px 30px 30px;
+        width: auto;
         height: 100%;
          border-color: black;
          border-right: solid;
          border-top: dashed;
          border-bottom: solid;
          border-left: solid;
+         display: inline-table;
      }
+
+     .barrasuperior2 {
+        display: table-cell;
+        vertical-align: bottom;
+        
+        border-radius: 0px 0px 30px 30px;
+
+       
+    }
+    .barrasuperior2 h1 {
+        border-radius: 0px 0px 30px 30px;
+        margin: 0px;
+    }
+    .tablaviaje
+ {
+    flex-direction: column;
+ }
+    
 }
+
