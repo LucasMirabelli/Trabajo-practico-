@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,14 @@
     <link rel="icon" href="/ViajesAuricular/Images/favicon-32x32.png">
     <link rel="stylesheet" href="Estilo.css">
 </head>
+
 <body>
     <header>
         <div class="contenedor">
-            <div class="Logo">
-                <a href="index.html"><img src="Images/favicon-32x32.png" alt=""></a> 
-                <h1>Viajes Auricular</h1>
-
-            </div>
-            <div class="Registro">
-                <div><a href="registro.html"> Registrate </a></div>
-                <div>Iniciar sesión</div>
-            </div>
+            <script type="text/javascript" src="header.js"></script>
         </div>
     </header>
-
-    <div class="barra">
-        <div>Busca tu vuelo</div>
-        <div>Promociones</div>
-        <div>Club Auri</div>
-        <div>Actividades</div>
-    </div>
-    <div class="contenido">
+    <div class="contenedor">
         <div>
             <div class="formulario">
                 <div class="barrasuperior">
@@ -38,13 +25,16 @@
                 </div>
                 <form action="" target="">
                     <label for=""> DNI: </label>
-                    <input type="number" maxlength="8">
+                    <input type="number" required maxlength="8">
                     <br>
-                    <label for=""> Nombres/s*: </label>
-                    <input type="text">
+                    <label for=""> Nombres/s: </label>
+                    <input type="text" required>
                     <br>
-                    <label for=""> Apellido/s*: </label>
-                    <input type="text">
+                    <label for=""> Apellido/s: </label>
+                    <input type="text" required>
+                    <br>
+                    <label for=""> Mail: </label>
+                    <input type="email" required maxlength="30">
                     <br>
                     <label for=""> Nacionalidad: </label>
                     <select name="Pais">
@@ -58,10 +48,15 @@
                         <option value="9">Perú</option>
                         <option value="10">Uruguay</option>
                     </select>
-
+                    <br>
+                    <input type="submit" value="Registrarme">
                 </form>
             </div>
         </div>
-    </div>   
+    </div>
+    <footer>
+        <script type="text/javascript" src="footer.js"></script>
+    </footer>
 </body>
+
 </html>
