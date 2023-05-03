@@ -10,8 +10,9 @@ document.write("        <img src='Images/telefono.PNG' alt='telefono' height='35
 document.write("        <p>0800-AURI-1234</p>");
 document.write("    </div>");
 document.write("    <div class='inicio'>");
-document.write("        <img src='Images/inicio.png' alt='' height='35px'>");
-document.write("        <p> <a href='iniciarsesion.html'>INICIAR SESIÓN</a></p>");
+
+document.write("        <a href='iniciarsesion.html'><img src='Images/inicio.png' alt='' height='35px'></a>");
+document.write("        <p><a href='iniciarsesion.html'>INICIAR SESIÓN</a></p>");
 document.write("    </div> ");
 document.write("</div>");
 document.write("</div>");
