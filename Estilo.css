@@ -66,7 +66,7 @@ body {
 
 }
 
-.redes {
+footer {
     grid-area: redes;
     background-color: rgb(111, 109, 111);
 }
@@ -178,6 +178,29 @@ body {
     border-style: solid;
 }
 
+.formularioinicio {
+    background-color: rgb(242, 242, 242);
+    margin:  10px 150px;
+    text-align: center;
+    width: 100%;
+    border-color: black;
+    border-style: solid;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+
+}
+ .barrasuperiorinicio>h1{
+            background-color: rgb(206, 55, 62);
+           
+        margin-top: 0px;
+        border-radius: 30px 30px 0px 0px;
+        padding: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+   
+ }
+
+
 .barrasuperior>h1 {
     background-color: rgb(206, 55, 62);
     margin-top: 0px;
@@ -257,6 +280,10 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.redes img {
+    mix-blend-mode: color-burn;
 }
 
 
