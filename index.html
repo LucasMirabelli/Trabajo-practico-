@@ -8,7 +8,7 @@
     <title>Viajes Auricular</title>
     <link rel="icon" href="Images/Viajes auricular.png">
     <link rel="stylesheet" href="Estilo.css">
-    
+
 
 </head>
 
@@ -19,46 +19,59 @@
         <script type="text/javascript" src="header.js"></script>
 
         <div class="izq"></div>
+        
         <div class="der"></div>
 
         <div class="contenido">
+
             <div class="formulario">
-                <div class="barrasuperior">
-                    <h1>Buscá tu vuelo</h1>
-                </div>
-                <div>
-                    <label for="">Origen</label>
-                    <input type="text">
-                    <label for="">Destino</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <button>Ida y vuelta</button>
-                    <button>Solo Ida</button>
-                    <button>Multiple destinos</button>
-                    <button>Todas las clases</button>
-                </div>
-                <div>
-                    <label for="">Ida</label>
-                    <label for="">Vuelta</label>
-                    <label for="">Adultos</label>
-                    <label for="">Niños</label>
-                    <label for="">Bebés</label>
-                </div>
-                <div>
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                </div>
+                <form action="">
+                    <div class="barrasuperior">
+                        <h1>Buscá tu vuelo</h1>
+                    </div>
+                    <div>
+                        <label for="">Origen</label>
+                        <input type="text">
+                        <label for="">Destino</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button>Ida y vuelta</button>
+                        <button>Solo Ida</button>
+                        <button>Multiple destinos</button>
+                        <button>Todas las clases</button>
+                    </div>
+                    <div>
+                        <label for="">Ida</label>
+                        <input type="date">
+
+                    </div>
+                    <div>
+                        <label for="">Vuelta</label>
+                        <input type="date">
+                    </div>
+                </form>
+
             </div>
             <div class="formulario2">
                 <div class="barrasuperior2">
                     <h1>Pasajeros</h1>
+                    <div>
+                        <label for="">Adultos</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="">Niños</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label for="">Bebés</label>
+                        <input type="number">
+                    </div>
                 </div>
             </div>
         </div>
+
 
 
         <div class="ofertas">
@@ -89,13 +102,14 @@
             </div>
         </div>
 
-        
-        
 
-    </div>
+
+
+    
     <footer>
         <script type="text/javascript" src="footer.js"></script>
     </footer>
+</div>
 </body>
 
 </html>
