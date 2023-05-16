@@ -1,0 +1,71 @@
+usa pagina de Booking tambien( buscador de vuelos de booking)
+
+API KEY: a9drZbEz2ZDv_WVx28rE_3JQn7wq09TW
+
+DATOS DE CUENTA:
+pagina: https://tequila.kiwi.com/
+EMAIL: lmirabelli1992@gmail.com
+CONTRASEÑA : Codoacodo123( con c primera en mayus )
+
+COMO SE USA:
+
+1 Introduction
+Building your travel agency allows you to keep the booking flow on your side. The main requirement is: To provide your own customer support.
+
+Kiwi.com becomes your content supplier. You can distribute Kiwi.com content under your brand.
+
+This allows you to:
+
+Get transportation content for the best B2B price we can offer. Set your margin to control revenue.
+You are the merchant of record.
+Commissions are restricted to virtual interlining only. These commissions depend on the payment method used (3% commission for payment cards and 4% commission for deposits).
+Use the Manage My Booking (MMB) tool to provide first level support and additional content for your customers.
+We are available to help you with any advanced issues through Tequila customer support.
+Read more about the Book with Kiwi.com program.
+
+2 Creating your online travel agency
+To keep the entire booking flow on your side and to be the merchant of record, you need to integrate:
+
+The Search API to obtain travel results.
+The Booking API to proceed with the booking and payment of the tickets.
+See the API documentation in Tequila Resources to help your developers with the Search API and Booking API integration.
+
+
+
+The first step in the API integration is to obtain your API key, which enables you to send API requests.
+
+1. In Tequila, select 
+My solutions
+ and click Create solution.
+
+2. Select Online travel agency - API Integration.
+
+3. Choose a search type for the solution which may suit your business case. There are three types of search models eligible for integration:
+
+One-way and Return
+Search one-way and return via Booking tool or implement your own integration.
+Multicity
+Search multiple city trips via Booking tool or implement your own integration.
+Nomad
+Search multiple city trips in the cheapest and best order via Booking tool or your own integration.
+All of these solutions are distributed with two settlement options.
+
+With Deposit (Bank Transfer), you are awarded a 4% commission for every virtually interlined booking. Deposit solutions require you to top up your deposit. One deposit credit represents one euro. The deposit is used to buy bookings at the best price we can offer.
+With Credit Card, you are awarded a 3% commission for every virtually interlined booking. These payment solutions allow you to use your company payment card.
+4. Go to My company and click My solutions.
+
+5. Find and click the solution name. Find the API key (apikey).
+
+6. Under the API key, click the Show button with an eye picture.
+
+7. Double click the field to copy the API key to your clipboard.
+
+8. Integrate Kiwi.com search according to the solution you created in step 3.
+
+9. Integrate the Kiwi.com Booking API to continue the booking process after the search.
+
+10. Contact our Integration Support Team for any assistance during the integration process.
+
+
+
+To understand the integration of customer support processes, see Customer support and Operational processes.
